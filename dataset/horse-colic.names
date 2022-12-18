@@ -1,4 +1,4 @@
-1. TItle: Horse Colic database
+1. Title: Horse Colic database
 
 2. Source Information
    -- Creators: Mary McLeish & Matt Cecile
@@ -27,20 +27,20 @@
 
 7. Attribute Information:
 
-  1:  surgery?
+  0:  surgery?
           1 = Yes, it had surgery
           2 = It was treated without surgery
 
-  2:  Age
+  1:  Age
           1 = Adult horse
           2 = Young (< 6 months)
 
-  3:  Hospital Number
+  2:  Hospital Number
           - numeric id
           - the case number assigned to the horse
             (may not be unique if the horse is treated > 1 time)
 
-  4:  rectal temperature
+  3:  rectal temperature
           - linear
           - in degrees celsius.
           - An elevated temp may occur due to infection.
@@ -50,7 +50,7 @@
                eg. may start out normal, then become elevated because of
                    the lesion, passing back through the normal range as the
                    horse goes into shock
-  5:  pulse
+  4:  pulse
           - linear
           - the heart rate in beats per minute
           - is a reflection of the heart condition: 30 -40 is normal for adults
@@ -59,12 +59,12 @@
           - animals with painful lesions or suffering from circulatory shock
             may have an elevated heart rate
 
-  6:  respiratory rate
+  5:  respiratory rate
           - linear
           - normal rate is 8 to 10
           - usefulness is doubtful due to the great fluctuations
 
-  7:  temperature of extremities
+  6:  temperature of extremities
           - a subjective indication of peripheral circulation
           - possible values:
                1 = Normal
@@ -74,7 +74,7 @@
           - cool to cold extremities indicate possible shock
           - hot extremities should correlate with an elevated rectal temp.
 
-  8:  peripheral pulse
+  7:  peripheral pulse
           - subjective
           - possible values are:
                1 = normal
@@ -84,7 +84,7 @@
           - normal or increased p.p. are indicative of adequate circulation
             while reduced or absent indicate poor perfusion
 
-  9:  mucous membranes
+  8:  mucous membranes
           - a subjective measurement of colour
           - possible values are:
                1 = normal pink
@@ -99,14 +99,14 @@
           - 4 and 6 are indicative of serious circulatory compromise
           - 5 is more indicative of a septicemia
 
- 10: capillary refill time
+ 9: capillary refill time
           - a clinical judgement. The longer the refill, the poorer the
             circulation
           - possible values
                1 = < 3 seconds
                2 = >= 3 seconds
 
- 11: pain - a subjective judgement of the horse's pain level
+ 10: pain - a subjective judgement of the horse's pain level
           - possible values:
                1 = alert, no pain
                2 = depressed
@@ -118,7 +118,7 @@
             surgery
           - prior treatment of pain may mask the pain level to some extent
 
- 12: peristalsis
+ 11: peristalsis
           - an indication of the activity in the horse's gut. As the gut
             becomes more distended or the horse becomes more toxic, the
             activity decreases
@@ -128,7 +128,7 @@
                3 = hypomotile
                4 = absent
 
- 13: abdominal distension
+ 12: abdominal distension
           - An IMPORTANT parameter.
           - possible values
                1 = none
@@ -140,7 +140,7 @@
           - a horse with severe abdominal distension is likely to require
             surgery just tio relieve the pressure
 
- 14: nasogastric tube
+ 13: nasogastric tube
           - this refers to any gas coming out of the tube
           - possible values:
                1 = none
@@ -149,7 +149,7 @@
           - a large gas cap in the stomach is likely to give the horse
             discomfort
 
- 15: nasogastric reflux
+ 14: nasogastric reflux
           - possible values
                1 = none
                2 = > 1 liter
@@ -158,12 +158,12 @@
             some serious obstruction to the fluid passage from the rest of
             the intestine
 
- 16: nasogastric reflux PH
+ 15: nasogastric reflux PH
           - linear
           - scale is from 0 to 14 with 7 being neutral
           - normal values are in the 3 to 4 range
 
- 17: rectal examination - feces
+ 16: rectal examination - feces
           - possible values
                1 = normal
                2 = increased
@@ -171,7 +171,7 @@
                4 = absent
           - absent feces probably indicates an obstruction
 
- 18: abdomen
+ 17: abdomen
           - possible values
                1 = normal
                2 = other
@@ -182,18 +182,18 @@
             and is normally treated medically
           - 4 and 5 indicate a surgical lesion
 
- 19: packed cell volume
+ 18: packed cell volume
           - linear
           - the # of red cells by volume in the blood
           - normal range is 30 to 50. The level rises as the circulation
             becomes compromised or as the animal becomes dehydrated.
 
- 20: total protein
+ 19: total protein
           - linear
           - normal values lie in the 6-7.5 (gms/dL) range
           - the higher the value the greater the dehydration
 
- 21: abdominocentesis appearance
+ 20: abdominocentesis appearance
           - a needle is put in the horse's abdomen and fluid is obtained from
             the abdominal cavity
           - possible values:
@@ -203,19 +203,19 @@
           - normal fluid is clear while cloudy or serosanguinous indicates
             a compromised gut
 
- 22: abdomcentesis total protein
+ 21: abdomcentesis total protein
           - linear
           - the higher the level of protein the more likely it is to have a
             compromised gut. Values are in gms/dL
 
- 23: outcome
+ 22: outcome
           - what eventually happened to the horse?
           - possible values:
                1 = lived
                2 = died
                3 = was euthanized
 
- 24: surgical lesion?
+ 23: surgical lesion?
           - retrospectively, was the problem (lesion) surgical?
           - all cases are either operated upon or autopsied so that
             this value and the lesion type are always known
@@ -223,7 +223,7 @@
                1 = Yes
                2 = No
 
- 25, 26, 27: type of lesion
+ 24, 25, 26: type of lesion
           - first number is site of lesion
                1 = gastric
                2 = sm intestine
@@ -257,7 +257,7 @@
                9 = lipoma/slenic incarceration
                10 = displacement
                0 = n/a
- 28: cp_data
+ 27: cp_data
           - is pathology data present for this case?
                1 = Yes
                2 = No
